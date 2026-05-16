@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>C_Sharp_DxLib_GameTemplate</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DxLibDotNet">
+      <HintPath>C:\Users\user\Downloads\DxLibDotNet3_24f\DxLibDotNet\DxLibDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="K:\User_Files\Dev\mochineko\CSharp_Project\C-Sharp_DxLib_GameTemplate\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="K:\User_Files\Dev\mochineko\CSharp_Project\C-Sharp_DxLib_GameTemplate\.editorconfig" />
+  </ItemGroup>
+
+</Project>
