@@ -1,4 +1,5 @@
-﻿using DxLibDLL;
+﻿using C_Sharp_DxLib_GameTemplate.Object;
+using DxLibDLL;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,24 +9,27 @@ namespace C_Sharp_DxLib_GameTemplate.Scene {
 
     internal class RootScene : BaseScene {
 
+        private TestObject testObject;
+
         public RootScene() : base("RootScene") {
 
         }
 
         public override void init() {
-
+            testObject = new TestObject();
+            testObject.init();
         }
 
         public override void update() {
-
+            testObject.update();
         }
 
         public override void draw() {
-            DrawString(0, 0, "Draw", GetColor(255, 255, 255));
+            testObject.draw();
         }
 
         public override void release() {
-
+            testObject.release();
         }
 
 
